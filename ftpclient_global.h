@@ -1,0 +1,12 @@
+#ifndef FTPCLIENT_GLOBAL_H
+#define FTPCLIENT_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(FTPCLIENT_LIBRARY)
+#  define FTPCLIENTSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define FTPCLIENTSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // FTPCLIENT_GLOBAL_H
